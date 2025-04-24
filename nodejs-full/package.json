@@ -10,7 +10,6 @@
     }
   },
   "main": "./dist/lib/index.cjs",
-  "module": "./dist/es/index.js",
   "types": "./dist/types/index.d.ts",
   "files": [
     "dist"
