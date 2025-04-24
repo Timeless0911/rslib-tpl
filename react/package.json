@@ -1,0 +1,35 @@
+{
+  "name": "react",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rslib build",
+    "dev": "rslib build --watch"
+  },
+  "devDependencies": {
+    "@rsbuild/plugin-react": "^1.2.0",
+    "@rslib/core": "^0.6.7",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "react": ">=19.0.0",
+    "react-dom": ">=19.0.0",
+    "@types/react": ">=19.0.0",
+    "@types/react-dom": ">=19.0.0"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "nodejs",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/es/index.js",
+      "require": "./dist/lib/index.cjs"
+    }
+  },
+  "main": "./dist/lib/index.cjs",
+  "module": "./dist/es/index.js",
+  "types": "./dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rslib build",
+    "dev": "rslib build --watch"
+  },
+  "devDependencies": {
+    "@rslib/core": "^0.6.7",
+    "@types/node": "^22.8.1",
+    "typescript": "^5.8.3"
+  }
+}
